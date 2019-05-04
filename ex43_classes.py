@@ -1,4 +1,4 @@
-class Scence(object):
+class Scene(object):
 	
 	def enter(self):
 		pass
@@ -24,19 +24,19 @@ class Map(object):
 	def opening_scence(self):
 		pass
 
-class Death(Scence):
+class Death(Scene):
 	pass
 
-class Central_Corridor(Scence):
+class Central_Corridor(Scene):
 	pass
 
-class Laser_Weapon_Armory(Scence):
+class Laser_Weapon_Armory(Scene):
 	pass
 
-class The_Bridge(Scence):
+class The_Bridge(Scene):
 	pass
 
-class Escape_Pod(Scence):
+class Escape_Pod(Scene):
 	pass
 
 # 测试模块

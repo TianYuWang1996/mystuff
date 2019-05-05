@@ -7,7 +7,7 @@ class Scene(object):
     def enter(self):
         print("This scene is not yet configured. "
             "Subclass it and implement enter().")
-        exit(1)  # 发生错误，强制退出。
+        exit(1)
 
 
 class Engine(object):
@@ -34,7 +34,7 @@ class Death(Scene):
     ]
     
     def enter(self):
-        print(Death.quips[randint(0, len(self.quips)-1)])  # 随机选一种死法
+        print(Death.quips[randint(0, len(self.quips)-1)])
         exit(1)
 
 
@@ -105,12 +105,12 @@ class Laser_Weapon_Armory(Scene):
         guess = input("[keypad]> ")
         guesses = 1
         
-        while guess != code and guesses < 10 and guess != "666666":
+        while guess != code and guesses < 10:
             print("BZZZZDDD!")
             guesses += 1
             guess = input("[keypad]> ")
         
-        if guess == code or guess == "666666":
+        if guess == code:
             print("The container clicks open and the seal breaks, letting gas out.")
             print("You grab the neutron bomb and run as fast as you can to the")
             print("bridge where you must place it in the right spot.")
@@ -180,7 +180,7 @@ class Escape_Pod(Scene):
         good_pod = randint(1, 5)
         guess = input("[pod #]> ")
         
-        if int(guess) != good_pod and int(guess) != 666666:
+        if int(guess) != good_pod:
             print("You jump into pod %s and hit the eject button." %guess)
             print("The pod escapes out into the void of space, then")
             print("implodes as the hull ruptures, crushing your body")

@@ -12,18 +12,6 @@ class Engine(object):
 	def play(self):
 		pass
 
-
-class Map(object):
-	
-	def __init__(self, start_scene):
-		pass
-	
-	def next_scence(self, scene_name):
-		pass
-	
-	def opening_scence(self):
-		pass
-
 class Death(Scene):
 	pass
 
@@ -38,6 +26,18 @@ class The_Bridge(Scene):
 
 class Escape_Pod(Scene):
 	pass
+
+class Map(object):
+	
+	def __init__(self, start_scene):
+		pass
+	
+	def next_scence(self, scene_name):
+		pass
+	
+	def opening_scence(self):
+		pass
+
 
 # 测试模块
 a_map = Map("central_corridor")
